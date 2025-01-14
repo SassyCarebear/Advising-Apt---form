@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Advising Appt Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Advising Appointment</h2>
+    <div class="container">
+      <form method="get" action="thankyou.html" target="_blank">
+        <fieldset>
+          <legend>
+            Contact Information
+          </legend>
+            <label for="fname">
+                Name:
+                <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
+            </label>
+            <label for="lname">
+                Last Name:
+                <input type="text" name="lname" id="lname" required placeholder="Last Name"/>
+            </label>
+            <label for="email">
+                Email:
+                <input type="email" name="email" id="email" required placeholder="Email"/>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Reservation Request
+            </legend>
+              <select name="teachers" id="teachers">
+                <option value="Kirsten Markely">Kirsten Markely</option>
+                <option value="Renee Riley">Renee Riley</option>
+                <option value="Tiffany Ford">Tiffany Ford</option>
+              </select>
+              <select name="months" id="months">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+              <input type="number" id="day" name="day" min="1" max="31">
+              <input type="radio" id="am" name="am" value="am">
+              <label for="am">AM</label>
+              <input type="radio" id="pm" name="pm" value="pm">
+              <label for="pm">PM</label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Classes You Want To Take Next Semester
+              </legend>
+              <input type="checkbox" id="class1" name="class1" value="Java">
+              <label for="class1"> Java</label>
+              <input type="checkbox" id="class2" name="class2" value="C#">
+              <label for="class2"> C#</label>
+              <input type="checkbox" id="class3" name="class3" value="Web Dev">
+              <label for="class3"> Web Dev</label>
+              <input type="checkbox" id="class4" name="class4" value="Database">
+              <label for="class4"> Database</label>
+              <input type="checkbox" id="class5" name="class5" value="SAD">
+              <label for="class5"> System Analysis & Design</label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Additional Information
+              </legend>
+              <textarea  name="extaInfo" rows="4" cols="50"></textarea>
+            </fieldset>
+          <input class="submit" type="submit" value="Submit"/>
+      </form>
+    </div>
+  </body>
+</html>
